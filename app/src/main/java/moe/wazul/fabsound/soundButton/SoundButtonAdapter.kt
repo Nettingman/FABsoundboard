@@ -25,4 +25,10 @@ class SoundButtonAdapter(private val soundButtonDatas: MutableList<SoundButtonDa
     override fun getItemCount(): Int {
         return soundButtonDatas.size
     }
+
+    fun addSoundButton(soundButtonData: SoundButtonData)
+    {
+        soundButtonDatas.add(soundButtonData)
+        notifyItemInserted(soundButtonDatas.size - 1)
+    }
 }
