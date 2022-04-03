@@ -3,6 +3,7 @@ package moe.wazul.fabsound
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
+import moe.wazul.fabcore.GridSpacingItemDecorator
 import moe.wazul.fabsound.databinding.ActivityMainBinding
 import moe.wazul.fabsound.soundButton.SoundButtonAdapter
 import moe.wazul.fabsound.soundButton.SoundButtonData
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         soundButtonAdapter = SoundButtonAdapter(mutableListOf<SoundButtonData>())
+        binding.rvSoundButtons.addItemDecoration(GridSpacingItemDecorator(8f))
         binding.rvSoundButtons.adapter = soundButtonAdapter
         binding.rvSoundButtons.layoutManager = GridLayoutManager(this, 2)
 
