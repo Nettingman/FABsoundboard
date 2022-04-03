@@ -10,10 +10,11 @@
 
     <color name="shade_black">#FF080808</color>
     <color name="shade_lighter_black">#FF0D0D0D</color>
-    <color name="flu_red">#FFE31616</color>
+    <color name="flu_red">#FFD32727</color>
     <color name="flu_purple">#FFCA1D9B</color>
     <color name="flu_blue">#FF194CE9</color>
     <color name="flu_green">#FF4CD335</color>
+    <color name="flu_green_dark">#FF3CA62A</color>
     <color name="flu_yellow">#FFE1D714</color>
 
 </resources>
