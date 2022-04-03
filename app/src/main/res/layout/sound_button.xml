@@ -11,6 +11,7 @@
             android:text="Button"
             android:layout_width="match_parent"
             android:layout_height="150dp"
+            android:background="@drawable/sound_button_drawable"
 
             app:layout_constraintTop_toTopOf="parent"/>
 
