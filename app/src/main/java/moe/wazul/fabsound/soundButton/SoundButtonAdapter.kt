@@ -1,8 +1,8 @@
 package moe.wazul.fabsound.soundButton
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import moe.wazul.fabsound.R
 import moe.wazul.fabsound.databinding.SoundButtonBinding
@@ -19,6 +19,11 @@ class SoundButtonAdapter(private val soundButtonDatas: MutableList<SoundButtonDa
         val soundButtonData = soundButtonDatas[position]
         holder.binding.apply {
             btnSound.text = soundButtonData.name
+            btnSound.setBackgroundColor(
+                ContextCompat.getColor(
+                    root.context, SoundButtonColor.getSoundButtonColorResource(soundButtonData.soundButtonColor)
+                )
+            )
         }
     }
 
